@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+html,body {
+    height: 100vh;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -142,12 +147,22 @@ section {
     background-size: cover;
 }
 
+.carousel-item img {
+    height: 100%;
+}
+
 .card{
     margin: 5% 0%;
 }
   
 .card-body {
     background-color: #171717;
+}
+
+.work-photos img {
+    height: 300px;
+    width: 250px;
+    padding-top: 20px;
 }
 
 @keyframes fadeOut {
