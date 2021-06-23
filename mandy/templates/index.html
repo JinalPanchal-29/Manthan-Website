@@ -16,7 +16,7 @@
     <div class="loader hidden">
         <img src="../static/assets/manthan_logo2.png" class="mandy-logo d-flex align-items-center" alt="Loader">
     </div>
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-custom py-0 fixed-top my-nav">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-custom py-0 px-0 fixed-top my-nav">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="../static/assets/manthan_logo.png" alt="" class="nav_brand"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -82,7 +82,7 @@
                 </div>
     
             </div>
-            <div class="d-flex justify-content-center w-100">
+            <div class="d-flex justify-content-center">
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-lg-6 text-center">
@@ -134,13 +134,18 @@
             <div class="container mx-auto my-auto pt-5">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <div class="card text-center mx-auto" style="width: 18rem; height: 20rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Coroprate Video</h5>
-                                <p class="card-text">I can help you with your company vision to convert into a film of
-                                    the highest quality.</p>
-                                <p class="card-text">I have worked with several multinational companies for their work.
-                                </p>
+                        <div class="card middle my-auto">
+                            <div class="front">
+                                <div class="front-content">
+                                    <h1>hello</h1>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content my-auto">
+                                    <h2>Corporate Video</h2>
+                                    <p>I can help you with your company vision to convert into a film of the highest quality.</p>
+                                    <p>I have worked with several multinational companies for their work.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,15 +222,14 @@
         </div>
     </section>
 
-    <script>
-        window.addEventListener("load", function () {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        });
-    </script>
 
 </body>
 <script>
+     window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+
     $('.navbar-nav li a').on('click', function () {
         if (!$(this).hasClass('dropdown-toggle')) {
             $('.navbar-collapse').collapse('hide');
